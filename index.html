@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>chat World</title>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external resources -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- local resources -->
+    <link rel="stylesheet" href="style.css">
+    <script src="./random.js"></script>
+    <script src="./messageComponent.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>   
+    <div class="app-container">
+        <div class="nav-bar">
+            <div class="logo-container">
+                <span>chat</span>
+                <img id="logo" src="codeworks-logo.png">
+                <span>orld</span>
+            </div>
+        </div>
+            <div class="chat-container shadow">
+                <div id="is-typing"></div>
+            </div>
+            <div class="footer">
+                <input type="text" id="message-input" class="shadow" placeholder="Type your message...">
+                <div class="fab-container">
+                    <!-- icon from https://materialdesignicons.com/ -->
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                    </svg>
+                </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

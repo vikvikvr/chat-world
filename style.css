@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #003;
+  color: rgb(73, 73, 73);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* found this preset on https://codepen.io/sdthornton/pen/wBZdXq */
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: stretch;
+  justify-content: center;
+  --codeworks-orange: #ff7b10;
+  width: 768px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.logo-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-container span {
+  color: white;
+  margin: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  align-self: center;
+}
+
+.chat-container {
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: calc(100vh - 160px);
+  padding: 32px 16px 32px 16px;
+  border-radius: 16px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 16px;
+  max-width: 70%;
+  border-radius: 16px 16px 16px 0px;
+  padding: 16px;
+  align-self: flex-start;
+}
+
+.mine {
+  background-color: #ffc66b;
+  align-self: flex-end;
+  border-radius: 16px 16px 0px 16px;
+}
+
+.message-sender {
+  font-weight: 500;
+}
+
+.message-text {
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+
+.message-time {
+  color: darkgrey;
+  align-self: flex-end;
+}
+
+.mine .message-time {
+  color: rgb(85, 85, 85);
+}
+
+#is-typing {
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: gray;
+  order: 1;
+}
+
+.footer {
+  display: flex;
+  align-self: stretch;
+  height: 72px;
+  align-content: center;
+  margin-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#message-input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.fab-container {
+  background-color: var(--codeworks-orange);
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-left: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
